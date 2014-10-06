@@ -5,23 +5,23 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>http://localhost:8000/categories/nikola.xml</loc>
+  <loc>http://www.pytech.net/categories/nikola.xml</loc>
   <lastmod>2014-10-06</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://localhost:8000/categories/nixos.xml</loc>
+  <loc>http://www.pytech.net/categories/nixos.xml</loc>
   <lastmod>2014-10-06</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://localhost:8000/categories/test.xml</loc>
+  <loc>http://www.pytech.net/categories/test.xml</loc>
   <lastmod>2014-10-06</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://localhost:8000/rss.xml</loc>
+  <loc>http://www.pytech.net/rss.xml</loc>
   <lastmod>2014-10-06</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://localhost:8000/sitemap.xml</loc>
+  <loc>http://www.pytech.net/sitemap.xml</loc>
   <lastmod>2014-10-06</lastmod>
  </sitemap>
 </sitemapindex>

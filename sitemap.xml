@@ -5,47 +5,47 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>http://localhost:8000/2014/10/index.html</loc>
+  <loc>http://www.pytech.net/2014/10/index.html</loc>
   <lastmod>2014-10-06</lastmod>
  </url>
  <url>
-  <loc>http://localhost:8000/2014/index.html</loc>
+  <loc>http://www.pytech.net/2014/index.html</loc>
   <lastmod>2014-10-06</lastmod>
  </url>
  <url>
-  <loc>http://localhost:8000/about-me.html</loc>
+  <loc>http://www.pytech.net/about-me.html</loc>
   <lastmod>2014-10-06</lastmod>
  </url>
  <url>
-  <loc>http://localhost:8000/archive.html</loc>
+  <loc>http://www.pytech.net/archive.html</loc>
   <lastmod>2014-10-06</lastmod>
  </url>
  <url>
-  <loc>http://localhost:8000/categories/index.html</loc>
+  <loc>http://www.pytech.net/categories/index.html</loc>
   <lastmod>2014-10-06</lastmod>
  </url>
  <url>
-  <loc>http://localhost:8000/categories/nikola.html</loc>
+  <loc>http://www.pytech.net/categories/nikola.html</loc>
   <lastmod>2014-10-06</lastmod>
  </url>
  <url>
-  <loc>http://localhost:8000/categories/nixos.html</loc>
+  <loc>http://www.pytech.net/categories/nixos.html</loc>
   <lastmod>2014-10-06</lastmod>
  </url>
  <url>
-  <loc>http://localhost:8000/categories/test.html</loc>
+  <loc>http://www.pytech.net/categories/test.html</loc>
   <lastmod>2014-10-06</lastmod>
  </url>
  <url>
-  <loc>http://localhost:8000/index.html</loc>
+  <loc>http://www.pytech.net/index.html</loc>
   <lastmod>2014-10-06</lastmod>
  </url>
  <url>
-  <loc>http://localhost:8000/posts/test-post.html</loc>
+  <loc>http://www.pytech.net/posts/test-post.html</loc>
   <lastmod>2014-10-06</lastmod>
  </url>
  <url>
-  <loc>http://localhost:8000/projects.html</loc>
+  <loc>http://www.pytech.net/projects.html</loc>
   <lastmod>2014-10-06</lastmod>
  </url>
 </urlset>

@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ewert);
+
+body {
+  font-family: "Ubuntu Mono";
+  font-size: 12pt;
+  background-color: #ffffff;
+  color: #3e3f3a;
+}
+
+.body-content footer {
+  position: absolute;
+  bottom: 3px;
+  padding: 10px;
+  border-style: solid;
+  border: 0;
+  border-top: thin dashed #000000;
+}
+
+.navbar-fixed-top {
+  border-style: dotted ridge;
+}
+	
+.navbar-inverse {
+  /* background-color: #93c54b; */
+  background-image: linear-gradient(#484E55, #3A3F44 60%, #313539);
+  background-repeat: no-repeat;
+  filter: none;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+ 
+a.navbar-brand,
+.body-content h1,
+article > header > h1 {
+  font-family: 'Ewert', cursive;
+}
+
+#blog-title {
+  letter-spacing: 2px;
+  font-size: 22pt;
+  color: inherit;
+}
+
+#blog-description {
+  font-size: 10pt;
+  font-family: 'Ubuntu Mono';
+  color: #00feff;
+}
+
+a {
+  text-decoration: none;
+  color: #fa0b0c;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+  color: #79a736;
+}
+
+#blog-description a,
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse a.navbar-brand {
+  background-color: transparent;
+}
+
+.navbar-header a.active,
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: transparent;   
+  color: #ffffff;
+}
+
+
+#blog-description a:hover,
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse a.navbar-brand:hover {
+  background: transparent;
+  text-decoration: underline;
+  color: #ffffff;
+}
+

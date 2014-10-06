@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+ <sitemap>
+  <loc>http://localhost:8000/categories/nikola.xml</loc>
+  <lastmod>2014-10-06</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://localhost:8000/categories/nixos.xml</loc>
+  <lastmod>2014-10-06</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://localhost:8000/categories/test.xml</loc>
+  <lastmod>2014-10-06</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://localhost:8000/rss.xml</loc>
+  <lastmod>2014-10-06</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://localhost:8000/sitemap.xml</loc>
+  <lastmod>2014-10-06</lastmod>
+ </sitemap>
+</sitemapindex>

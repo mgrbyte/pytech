@@ -288,14 +288,14 @@ OUTPUT_FOLDER = 'build'
 # And then do a backup, or run `nikola ping` from the `ping`
 # plugin (`nikola install_plugin ping`).
 # To do manual deployment, set it to []
-DEPLOY_COMMANDS = [
-    'git add .',
-    'git commit -am "Update"',
-    'git push origin master',
-    'git subtree split --prefix %s -b gh-pages' % OUTPUT_FOLDER,
-    'git push -f origin gh-pages:gh-pages',
-    'git branch -D gh-pages'
-]
+# DEPLOY_COMMANDS = [
+#     'git add .',
+#     'git commit -am "Update"',
+#     'git push origin master',
+#     'git subtree split --prefix %s -b gh-pages' % OUTPUT_FOLDER,
+#     'git push -f origin gh-pages:gh-pages',
+#     'git branch -D gh-pages'
+# ]
 
 # For user.github.io/organization.github.io pages, the DEPLOY branch
 # MUST be 'master', and 'gh-pages' for other repositories.

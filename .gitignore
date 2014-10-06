@@ -1,4 +1,8 @@
-build
-cache
-*.pyc
 *.db
+*.pyc
+bin/
+build/
+cache/
+include/
+lib/
+share/

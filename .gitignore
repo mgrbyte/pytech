@@ -1,0 +1,9 @@
+*~
+.doit.db
+__pycache__/
+cache/
+bin/
+include/
+lib/
+share/
+

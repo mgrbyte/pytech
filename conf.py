@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 from __future__ import unicode_literals
 import time
 
@@ -10,29 +9,29 @@ import time
 # ! Some settings can be different in different languages.
 # ! A comment stating (translatable) is used to denote those.
 # ! There are two ways to specify a translatable setting:
-# ! (a) BLOG_TITLE = "My Blog"
-# ! (b) BLOG_TITLE = {"en": "My Blog", "es": "Mi Blog"}
+# ! (a) BLOG_TITLE = 'My Blog'
+# ! (b) BLOG_TITLE = {'en': 'My Blog', 'es': 'Mi Blog'}
 # ! Option (a) is used when you don't want that setting translated.
 # ! Option (b) is used for settings that are different in different languages.
 
 
 # Data about this site
-BLOG_AUTHOR = "Matt Russell"  # (translatable)
+BLOG_AUTHOR = 'Matt Russell'  # (translatable)
 # (translatable)
 BLOG_TITLE = {
-    "en": "Matt's musings"
+    'en': "Matt's musings"
 }
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://www.pytech.net/"
-SITE_URL = "http://localhost:8000"
+SITE_URL = 'http://www.pytech.net/'
+SITE_URL = 'http://localhost:8000'
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-BASE_URL = "{}/".format(SITE_URL)
-BLOG_EMAIL = "matt@pytech.net"
+BASE_URL = '{}/'.format(SITE_URL)
+BLOG_EMAIL = 'matt@pytech.net'
 # (translatable)
 BLOG_DESCRIPTION = {
-    "en": """Matt Russell's musings on software development."""
+    'en': """Matt Russell's musings on software development."""
 }
 
 # Nikola is multilingual!
@@ -74,24 +73,24 @@ BLOG_DESCRIPTION = {
 # in the default language will be shown instead.
 
 # What is the default language?
-DEFAULT_LANG = "en"
+DEFAULT_LANG = 'en'
 
 # What other languages do you have?
-# The format is {"translationcode" : "path/to/translation" }
+# The format is {'translationcode' : 'path/to/translation' }
 # the path will be used as a prefix for the generated pages location
 TRANSLATIONS = {
-    DEFAULT_LANG: "",
+    DEFAULT_LANG: '',
 }
 
 # What will translated input files be named like?
 
 # If you have a page something.rst, then something.pl.rst will be considered
 # its Polish translation.
-#     (in the above example: path == "something",/ ext == "rst", lang == "pl")
+#     (in the above example: path == 'something',/ ext == 'rst', lang == 'pl')
 # this pattern is also used for metadata:
 #     something.meta -> something.pl.meta
 
-TRANSLATIONS_PATTERN = "{path}.{ext}.{lang}"
+TRANSLATIONS_PATTERN = '{path}.{ext}.{lang}'
 
 # Links for the sidebar / navigation bar.
 # You should provide a key-value pair pfor each used language.
@@ -106,8 +105,8 @@ NAVIGATION_LINKS = {
 }
 
 # Name of the theme to use.
-# THEME = "bootstrap3-jinja"
-THEME = "pytech"
+# THEME = 'bootstrap3-jinja'
+THEME = 'pytech'
 
 # Below this point, everything is optional
 
@@ -118,7 +117,7 @@ THEME = "pytech"
 # (eg. 'Europe/Zurich')
 # Also, if you want to use a different time zone in some of your posts,
 # you can use the ISO 8601/RFC 3339 format (ex. 2012-03-30T23:00:00+02:00)
-TIMEZONE = "Europe/London"
+TIMEZONE = 'Europe/London'
 
 # If you want to use ISO 8601 (also valid RFC 3339) throughout Nikola
 # (especially in new_post), set this to True.
@@ -133,7 +132,7 @@ TIMEZONE = "Europe/London"
 # sometimes explicit control can come handy.
 # In this file we express locales in the string form that
 # python's locales will accept in your OS, by example
-# "en_US.utf8" in unix-like OS, "English_United States" in Windows.
+# 'en_US.utf8' in unix-like OS, 'English_United States' in Windows.
 # LOCALES = dict mapping language --> explicit locale for the languages
 # in TRANSLATIONS. You can ommit one or more keys.
 # LOCALE_FALLBACK = locale to use when an explicit locale is unavailable
@@ -146,7 +145,7 @@ TIMEZONE = "Europe/London"
 # (whatever/thing.txt).
 #
 # That fragment could have an associated metadata file (whatever/thing.meta),
-# and optionally translated files (example for spanish, with code "es"):
+# and optionally translated files (example for spanish, with code 'es'):
 #     whatever/thing.es.txt and whatever/thing.es.meta
 #
 #     This assumes you use the default TRANSLATIONS_PATTERN.
@@ -158,7 +157,7 @@ TIMEZONE = "Europe/London"
 # pages, which will be placed at
 # output / TRANSLATIONS[lang] / destination / pagename.html
 #
-# where "pagename" is the "slug" specified in the metadata file.
+# where 'pagename' is the 'slug' specified in the metadata file.
 #
 # The difference between POSTS and PAGES is that POSTS are added
 # to feeds and are considered part of a blog, while PAGES are
@@ -166,19 +165,19 @@ TIMEZONE = "Europe/London"
 #
 
 POSTS = (
-    ("posts/*.ipynb", "posts", "post.tmpl"),
-    ("posts/*.txt", "posts", "post.tmpl"),
-    ("posts/*.rst", "posts", "post.tmpl"),
+    ('posts/*.ipynb', 'posts', 'post.tmpl'),
+    ('posts/*.txt', 'posts', 'post.tmpl'),
+    ('posts/*.rst', 'posts', 'post.tmpl'),
 )
 PAGES = (
-    ("root/*.rst", "", "story.tmpl"),
-    ("stories/*.ipynb", "stories", "story.tmpl"),
-    ("stories/*.rst", "stories", "story.tmpl"),
-    ("stories/*.txt", "stories", "story.tmpl"),
+    ('root/*.rst', '', 'story.tmpl'),
+    ('stories/*.ipynb', 'stories', 'story.tmpl'),
+    ('stories/*.rst', 'stories', 'story.tmpl'),
+    ('stories/*.txt', 'stories', 'story.tmpl'),
 )
 
 # One or more folders containing files to be copied as-is into the output.
-# The format is a dictionary of "source" "relative destination".
+# The format is a dictionary of 'source' 'relative destination'.
 # Default is:
 # FILES_FOLDERS = {'files': '' }
 # Which means copy 'files' into 'output'
@@ -191,14 +190,14 @@ PAGES = (
 # 'markdown' is MarkDown
 # 'html' assumes the file is html and just copies it
 COMPILERS = {
-    "rest": ('.rst', '.txt'),
-    "markdown": ('.md', '.mdown', '.markdown'),
-    "textile": ('.textile',),
-    "txt2tags": ('.t2t',),
-    "bbcode": ('.bb',),
-    "wiki": ('.wiki',),
-    "ipynb": ('.ipynb',),
-    "html": ('.html', '.htm'),
+    'rest': ('.rst', '.txt'),
+    'markdown': ('.md', '.mdown', '.markdown'),
+    'textile': ('.textile',),
+    'txt2tags': ('.t2t',),
+    'bbcode': ('.bb',),
+    'wiki': ('.wiki',),
+    'ipynb': ('.ipynb',),
+    'html': ('.html', '.htm'),
     # PHP files are rendered the usual way (i.e. with the full templates).
     # The resulting files have .php extensions, making it possible to run
     # them without reconfiguring your server to recognize them.
@@ -231,7 +230,7 @@ SHOW_BLOG_TITLE = True
 # output / TRANSLATION[lang] / TAG_PATH / index.html (list of tags)
 # output / TRANSLATION[lang] / TAG_PATH / tag.html (list of posts for a tag)
 # output / TRANSLATION[lang] / TAG_PATH / tag.xml (RSS feed for a tag)
-# TAG_PATH = "categories"
+# TAG_PATH = 'categories'
 
 # If TAG_PAGES_ARE_INDEXES is set to True, each tag's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
@@ -239,7 +238,7 @@ SHOW_BLOG_TITLE = True
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-# INDEX_PATH = ""
+# INDEX_PATH = ''
 
 # Create per-month archives instead of per-year
 CREATE_MONTHLY_ARCHIVE = True
@@ -249,8 +248,8 @@ CREATE_MONTHLY_ARCHIVE = True
 # output / TRANSLATION[lang] / ARCHIVE_PATH / ARCHIVE_FILENAME
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / index.html
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / MONTH / index.html
-# ARCHIVE_PATH = ""
-# ARCHIVE_FILENAME = "archive.html"
+# ARCHIVE_PATH = ''
+# ARCHIVE_FILENAME = 'archive.html'
 
 # URLs to other posts/pages can take 3 forms:
 # rel_path: a relative URL to the current page/post (default)
@@ -260,7 +259,7 @@ URL_TYPE = 'full_path'
 
 # Final location for the blog main RSS feed is:
 # output / TRANSLATION[lang] / RSS_PATH / rss.xml
-# RSS_PATH = ""
+# RSS_PATH = ''
 
 # Number of posts in RSS feeds
 # FEED_LENGTH = 10
@@ -269,14 +268,19 @@ URL_TYPE = 'full_path'
 # often removed or replaced as well.
 # SLUG_TAG_PATH = True
 
-# A list of redirection tuples, [("foo/from.html", "/bar/to.html")].
+# A list of redirection tuples, [('foo/from.html', '/bar/to.html')].
 #
 # A HTML file will be created in output/foo/from.html that redirects
-# to the "/bar/to.html" URL. notice that the "from" side MUST be a
+# to the '/bar/to.html' URL. notice that the 'from' side MUST be a
 # relative URL.
 #
 # If you don't need any of these, just set to []
 REDIRECTIONS = []
+
+# Where the output site should be located
+# If you don't use an absolute path, it will be considered as relative
+# to the location of conf.py
+OUTPUT_FOLDER = 'build'
 
 # Commands to execute to deploy. Can be anything, for example,
 # you may use rsync:
@@ -284,12 +288,14 @@ REDIRECTIONS = []
 # And then do a backup, or run `nikola ping` from the `ping`
 # plugin (`nikola install_plugin ping`).
 # To do manual deployment, set it to []
-DEPLOY_COMMANDS = ["git add .",
-                   "git commit -am 'Update'",
-                   "git push origin master",
-                   "git subtree split --prefix output -b gh-pages",
-                   "git push -f origin gh-pages:gh-pages",
-                   "git branch -D gh-pages"]
+DEPLOY_COMMANDS = [
+    'git add .',
+    'git commit -am "Update"',
+    'git push origin master',
+    'git subtree split --prefix %s -b gh-pages' % OUTPUT_FOLDER,
+    'git push -f origin gh-pages:gh-pages',
+    'git branch -D gh-pages'
+]
 
 # For user.github.io/organization.github.io pages, the DEPLOY branch
 # MUST be 'master', and 'gh-pages' for other repositories.
@@ -299,12 +305,7 @@ GITHUB_DEPLOY_BRANCH = 'gh-pages'
 # The name of the remote where you wish to push to, using github_deploy.
 GITHUB_REMOTE_NAME = 'origin'
 
-# Where the output site should be located
-# If you don't use an absolute path, it will be considered as relative
-# to the location of conf.py
-OUTPUT_FOLDER = 'build'
-
-# where the "cache" of partial generated content should be located
+# where the 'cache' of partial generated content should be located
 # default: 'cache'
 # CACHE_FOLDER = 'cache'
 
@@ -330,7 +331,7 @@ OUTPUT_FOLDER = 'build'
 # Many filters are shipped with Nikola.  A list is available in the manual:
 # <http://getnikola.com/handbook.html#post-processing-filters>
 # FILTERS = {
-#    ".jpg": ["jpegoptim --strip-all -m75 -v %s"],
+#    '.jpg': ['jpegoptim --strip-all -m75 -v %s'],
 # }
 
 # Expert setting! Create a gzipped copy of each generated file. Cheap server-
@@ -339,9 +340,9 @@ OUTPUT_FOLDER = 'build'
 # File extensions that will be compressed
 # GZIP_EXTENSIONS = ('.txt', '.htm', '.html', '.css', '.js', '.json', '.xml')
 # Use an external gzip command? None means no.
-# Example: GZIP_COMMAND = "pigz -k {filename}"
+# Example: GZIP_COMMAND = 'pigz -k {filename}'
 # GZIP_COMMAND = None
-# Make sure the server does not return a "Accept-Ranges: bytes" header for
+# Make sure the server does not return a 'Accept-Ranges: bytes' header for
 # files compressed by this option! OR make sure that a ranged request does not
 # return partial content of another representation for these resources. Do not
 # use this feature if you do not understand what this means.
@@ -366,7 +367,7 @@ OUTPUT_FOLDER = 'build'
 
 # Galleries are folders in galleries/
 # Final location of galleries will be output / GALLERY_PATH / gallery_name
-# GALLERY_PATH = "galleries"
+# GALLERY_PATH = 'galleries'
 # THUMBNAIL_SIZE = 180
 # MAX_IMAGE_SIZE = 1280
 # USE_FILENAME_AS_TITLE = True
@@ -382,15 +383,15 @@ OUTPUT_FOLDER = 'build'
 # Data about post-per-page indexes.
 # INDEXES_PAGES defaults to 'old posts, page %d' or 'page %d' (translated),
 # depending on the value of INDEXES_PAGES_MAIN.
-# INDEXES_TITLE = ""         # If this is empty, defaults to BLOG_TITLE
+# INDEXES_TITLE = ''         # If this is empty, defaults to BLOG_TITLE
 #
 # If this is empty, defaults to '[old posts,] page %d' (see above)
-# INDEXES_PAGES = ""
+# INDEXES_PAGES = ''
 # INDEXES_PAGES_MAIN = False # If True, INDEXES_PAGES is also displayed on
 #                            # the main (the newest) index page (index.html)
 
 # Color scheme to be used for code blocks. If your theme provides
-# "assets/css/code.css" this is ignored.
+# 'assets/css/code.css' this is ignored.
 # Can be any of autumn borland bw colorful default emacs friendly fruity manni
 # monokai murphy native pastie perldoc rrt tango trac vim vs
 # CODE_COLOR_SCHEME = 'default'
@@ -490,10 +491,10 @@ CONTENT_FOOTER_FORMATS = {
     DEFAULT_LANG: (
         (),
         {
-            "email": BLOG_EMAIL,
-            "author": BLOG_AUTHOR,
-            "date": time.gmtime().tm_year,
-            "license": LICENSE
+            'email': BLOG_EMAIL,
+            'author': BLOG_AUTHOR,
+            'date': time.gmtime().tm_year,
+            'license': LICENSE
         }
     )
 }
@@ -502,12 +503,12 @@ CONTENT_FOOTER_FORMATS = {
 # systems.  The following comment systems are supported by Nikola:
 #   disqus, facebook, googleplus, intensedebate, isso, livefyre, muut
 # You can leave this option blank to disable comments.
-COMMENT_SYSTEM = ""
+COMMENT_SYSTEM = ''
 # And you also need to add your COMMENT_SYSTEM_ID which
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-COMMENT_SYSTEM_ID = ""
+COMMENT_SYSTEM_ID = ''
 
 # Enable annotations using annotateit.org?
 # If set to False, you can still enable them for individual posts and pages
@@ -612,7 +613,7 @@ IPYNB_CONFIG = {'Exporter': {'template_file': 'toggle'}}
 # Social buttons. This is sample code for AddThis (which was the default for a
 # long time). Insert anything you want here, or even make it empty.
 # (translatable)
-SOCIAL_BUTTONS_CODE = ""
+SOCIAL_BUTTONS_CODE = ''
 
 # Show link to source for the posts?
 # Formerly known as HIDE_SOURCELINK (inverse)
@@ -689,11 +690,11 @@ SOCIAL_BUTTONS_CODE = ""
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-# EXTRA_HEAD_DATA = ""
+# EXTRA_HEAD_DATA = ''
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in< the default template (base.tmpl).
 # (translatable)
-BODY_END = ""
+BODY_END = ''
 
 # The possibility to extract metadata from the filename by using a
 # regular expression.

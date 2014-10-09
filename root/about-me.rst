@@ -13,7 +13,10 @@ About me
 *Matt Russell*
 
 I work for `Netsight`_  as a `Python`_/`Plone`_/`Pyramid`_ developer.
-Reach me at matt at pytech dot net.
+
+Reach me at matthew dot russell at horizon5 dot org.
+
+GPG Fingerprint: 448B E195 AE8A CB6E BFBE  2074 30CA 9513 F92C 9281
 
 This site is statically generated with `Nikola`_.
 
